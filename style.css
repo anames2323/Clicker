@@ -1,0 +1,18 @@
+body{margin:0;font-family:Arial;background:#0f172a;color:white;text-align:center;}
+header{background:#1e293b;padding:15px;}
+.rankbar{width:90%;height:10px;background:#334155;margin:auto;border-radius:5px;overflow:hidden;}
+#rankBar{height:100%;width:0%;background:#22c55e;}
+.page{display:none;padding:20px;}
+.active{display:block;}
+.score{font-size:40px;margin:20px;}
+#clickBtn{width:180px;height:180px;border-radius:100%;border:none;font-size:50px;background:linear-gradient(45deg,#06b6d4,#3b82f6);color:white;box-shadow:0 0 25px #3b82f6;}
+#clickBtn:active{transform:scale(0.9);}
+.stats{margin-top:20px;}
+.upgrade{background:#1e293b;margin:15px;padding:15px;border-radius:10px;display:flex;justify-content:space-between;cursor:pointer;}
+.profileBox{background:#1e293b;margin:15px;padding:15px;border-radius:10px;}
+.nav{position:fixed;bottom:0;width:100%;background:#1e293b;display:flex;justify-content:space-around;padding:10px;}
+.nav button{background:none;border:none;color:white;font-size:22px;}
+.leader{display:flex;justify-content:space-between;padding:10px;background:#1e293b;margin:10px;border-radius:10px;}
+.clickFx{position:fixed;left:50%;top:50%;font-size:30px;animation:float 1s forwards;}
+@keyframes float{0%{transform:translate(-50%,0);opacity:1}100%{transform:translate(-50%,-100px);opacity:0}}
+.achievement{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#16a34a;padding:10px 20px;border-radius:10px;}

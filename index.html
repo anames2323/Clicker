@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Clicker</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header>
+<h1>💎 Telegram Clicker</h1>
+<div id="rank">Rank: Beginner</div>
+<div class="rankbar"><div id="rankBar"></div></div>
+</header>
+
+<div id="clickerPage" class="page active">
+<div class="score"><h2 id="coins">0</h2><p>Coins</p></div>
+<button id="clickBtn">⚡</button>
+<div class="stats">
+<p>Energy: <span id="energy">100</span></p>
+<p>Per Click: <span id="perClick">1</span></p>
+</div>
+</div>
+
+<div id="upgradePage" class="page">
+<h2>🚀 Upgrades</h2>
+<div class="upgrade" onclick="buyUpgrade()"><span>Increase Click</span><span id="upgradePrice">10</span></div>
+<div class="upgrade" onclick="buyAuto()"><span>Auto Clicker</span><span>200</span></div>
+</div>
+
+<div id="missionsPage" class="page">
+<h2>🎯 Missions</h2>
+<div id="missions"></div>
+</div>
+
+<div id="profilePage" class="page">
+<h2>👤 Profile</h2>
+<div class="profileBox"><p>User:</p><h3 id="username">Player</h3></div>
+<div class="profileBox"><p>Coins:</p><h3 id="profileCoins">0</h3></div>
+<button onclick="share()">Share Game</button>
+</div>
+
+<div id="leaderboardPage" class="page">
+<h2>🏆 Leaderboard</h2>
+<div id="top"></div>
+</div>
+
+<div class="nav">
+<button onclick="openPage('clickerPage')">🎮</button>
+<button onclick="openPage('upgradePage')">🚀</button>
+<button onclick="openPage('missionsPage')">🎯</button>
+<button onclick="openPage('leaderboardPage')">🏆</button>
+<button onclick="openPage('profilePage')">👤</button>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
